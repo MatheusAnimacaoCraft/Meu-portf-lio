@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Meu portfólio</title>
   </head>
   <body>
-    <header class="conteiner text-center">
-      <img src="img/matheus.png" alt="avatar de matheus" class="rounded-circle"/ width="150" height="150">
-      <p class="lead">Olá Sou Matheus Eduardo Custódio Souza_</p>
-      <h1>sou estudante em programção</h1>
+    <header class="container text-center"> <!-- CORRIGIDO: 'conteiner' -> 'container' -->
+      <img
+        src="img/matheus.png"
+        alt="avatar de matheus"
+        class="rounded-circle"
+        width="150"
+        height="150"
+      />
+      <p class="lead">Olá! Sou Matheus Eduardo Custódio Souza</p>
+      <h1>Sou estudante em programação</h1> <!-- CORRIGIDO: 'programção' -> 'programação' -->
       <p>
         Olá! Sou Matheus Eduardo Custódio Souza, estudante do 3º ano do Ensino
         Médio com formação técnica em Tecnologia e Robótica pela Alura. Estou em
@@ -27,31 +38,190 @@
       </p>
       <p>Minhas habilidades</p>
       <div>
-        <p class="badge text-bg-secondary">HTML</p>
-        <p class="badge text-bg-secondary">CSS</p>
-        <p class="badge text-bg-secondary">JavaScrispt</p>
-        <p class="badge text-bg-secondary">Scratch</p>
-        <p class="badge text-bg-secondary">Mine Imator</p>
-        <p class="badge text-bg-secondary">Modelbench</p>
-        <p class="badge text-bg-secondary">blender</p>
-        <p class="badge text-bg-secondary">Shotcut</p>
-        <p></p>
+        <span class="badge text-bg-secondary">HTML</span>
+        <span class="badge text-bg-secondary">CSS</span>
+        <span class="badge text-bg-secondary">JavaScript</span> <!-- CORRIGIDO: 'JavaScrispt' -->
+        <span class="badge text-bg-secondary">Scratch</span>
+        <span class="badge text-bg-secondary">Mine Imator</span>
+        <span class="badge text-bg-secondary">Modelbench</span>
+        <span class="badge text-bg-secondary">Blender</span> <!-- CORRIGIDO: 'blender' com inicial maiúscula -->
+        <span class="badge text-bg-secondary">Shotcut</span>
       </div>
     </header>
 
-    <main class="conteiner">
-      <h2>meus projetos</h2>
+    <main class="container mt-5"> <!-- CORRIGIDO: 'conteiner' -> 'container' -->
+      <h2>Meus projetos</h2>
       <div class="row">
+
+        <!-- Projeto 1 -->
         <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card mb-4">
+            <img src="img/sliding puzzle.jpg" class="card-img-top" alt="sliding puzzle">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Sliding Puzzle 3x3</h5>
+              <p class="card-text">
+                Um sliding puzzle 3x3 (também conhecido como quebra-cabeça deslizante ou quebra-cabeça de 8 peças) é um jogo de lógica e raciocínio no qual o objetivo é organizar peças numeradas de 1 a 8 dentro de uma grade de 3x3, deixando uma célula vazia que permite mover as peças.
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
             </div>
           </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Aventura na Floresta Sombria.jpg" class="card-img-top" alt="Aventura na Floresta Sombria">
+            <div class="card-body">
+              <h5 class="card-title">Aventura na Floresta Sombria</h5>
+              <p class="card-text">
+                Site interativo desenvolvido para dispositivos móveis, tablets e PCs, proporcionando uma experiência envolvente em uma aventura pela Floresta Sombria. O site pode ser acessado pelo navegador em qualquer dispositivo.
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Animafrix.jpg" class="card-img-top" alt="Animafrix">
+            <div class="card-body">
+              <h5 class="card-title">Animafrix</h5>
+              <p class="card-text">
+                Animafrix é um site desenvolvido como parte do meu aprendizado em programação e design web. Foi criado com o objetivo de demonstrar habilidades básicas de criação de sites interativos e intuitivos, acessível tanto em dispositivos móveis quanto em desktop.
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/tails.jpg" class="card-img-top" alt="tails">
+            <div class="card-body">
+              <h5 class="card-title">Tails Animado p5.js</h5>
+              <p class="card-text">
+                Descubra como combinar arte e programação de forma criativa. Aprenda a utilizar P5.js para criar projetos interativos e visuais. Aplique conceitos matemáticos, como o teorema de Pitágoras, em projetos de arte digital.
+                Lógica de programação: criando arte interativa com P5.js
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/pong.jpg" class="card-img-top" alt="pong">
+            <div class="card-body">
+              <h5 class="card-title">pong</h5>
+              <p class="card-text">
+                Projeto em Scratch – Jogo de Raquetes
+                Descrição: Jogo de lógica criado com comandos personalizados para movimentar duas raquetes em uma arena virtual.
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 6 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Tanque Survival.jpg" class="card-img-top" alt="Tanque Survival">
+            <div class="card-body">
+              <h5 class="card-title">Tanque Survival</h5>
+              <p class="card-text">
+                Projeto em Scratch - Tanque Survival v7.6.1 alpha
+                objetivo sobreviver, tanque até final sem morrer.
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <h2>Meus projetos animação</h2>
+      <div class="row">
+
+        <!-- Projeto 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Sonic 3 foto animação 2.jpg" class="card-img-top" alt="Sonic 3 foto animação">
+            <div class="card-body">
+              <h5 class="card-title">Sonic The Hedgehog 3 -Trailer Minecraft Animation</h5>
+              <p class="card-text">
+                Nova aventura. Novo rival. 💙💛❤️🖤 Assista ao trailer de Minecraft para #SonicMovie3 agora!
+
+Transformers Games Brasil está quase chegando nos mil inscritos, e aliás, ele me ajudou a fazer o trailer do Sonic 3: O filme. Então INSCREVA-SE!
+
+Dirigido por @AnimacaoCraftBR
+Produzido por @AnimacaoCraftBR e @transformersgamesbr3219
+
+Cenário de produção e designer por @AnimacaoCraftBR e @transformersgamesbr3219
+
+Animado por @AnimacaoCraftBR e @transformersgamesbr3219
+
+Editado por @transformersgamesbr3219
+
+Miniatura por @transformersgamesbr3219
+
+Logotipo feito por @AnimacaoCraftBR
+
+Efeitos visuais por @AnimacaoCraftBR e @transformersgamesbr3219
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Sonic Adventure 2_ Battle.png" class="card-img-top" alt="Sonic Adventure 2">
+            <div class="card-body">
+              <h5 class="card-title">Abertura do Herói do Sonic Adventure 2 [Animação do Minecraft]</h5>
+              <p class="card-text">
+                Abertura do Herói do Sonic Adventure 2, com o início épico pulando do helicóptero da G.U.N no Minecraft! 🚁🦔
+
+Dirigido por @AnimacaoCraftBR
+Produzido por @AnimacaoCraftBR e @transformersgamesbr3219
+
+Cenário de produção e designer por @AnimacaoCraftBR
+
+Animado por @AnimacaoCraftBR e @transformersgamesbr3219
+
+Editado por @AnimacaoCraftBR
+
+Miniatura por @AnimacaoCraftBR
+
+Efeitos visuais por @AnimacaoCraftBR
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/fofo minecraft filme.png" class="card-img-top" alt="Sonic Adventure 2">
+            <div class="card-body">
+              <h5 class="card-title">Minecraft Movie Trailer [Animação do Minecraft]</h5>
+              <p class="card-text">
+                Trailer do filme Minecraft
+
+Créditos:
+Animação: AnimaçãoCraftBr.
+Iluminação: AnimaçãoCraftBr.
+Mapa: Transformers Games Brasil
+              </p>
+              <button type="button" class="btn btn-link">Veja o projeto</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </main>
 
